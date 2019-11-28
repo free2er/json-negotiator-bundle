@@ -55,6 +55,8 @@ class JsonNegotiatorListener implements EventSubscriberInterface
      * Преобразует тело JSON-запроса
      *
      * @param ControllerEvent $event
+     *
+     * @throws BadRequestHttpException
      */
     public function parseRequest(ControllerEvent $event)
     {
