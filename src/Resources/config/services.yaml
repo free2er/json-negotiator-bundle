@@ -1,0 +1,10 @@
+services:
+    _defaults:
+        autoconfigure: true
+        autowire: true
+
+    # Преобразователь тела JSON-запросов
+    Free2er\Json\EventListener\JsonNegotiatorListener:
+        arguments:
+            - '%json_negotiator.content_types%'
+            - '%json_negotiator.methods%'

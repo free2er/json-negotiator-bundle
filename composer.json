@@ -1,0 +1,40 @@
+{
+    "name": "free2er/json-negotiator-bundle",
+    "description": "JSON Negotiator Bundle",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Pryakhin",
+            "email": "m.pryakhin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Free2er\\Json\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Free2er\\Json\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "symfony/config": "^5.0",
+        "symfony/dependency-injection": "^5.0",
+        "symfony/http-kernel": "^5.0"
+    },
+    "require-dev": {
+        "free2er/coding-standard": "^1.1",
+        "phpunit/phpunit": "^8.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs",
+        "test": "vendor/bin/phpunit"
+    }
+}
